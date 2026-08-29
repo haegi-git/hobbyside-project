@@ -8,10 +8,11 @@ export default function Home() {
         Next.js 환경이 준비되었습니다
       </h1>
       <p className="max-w-md text-lg leading-relaxed text-zinc-600">
-        App Router · TypeScript · Tailwind CSS. Supabase는 이후에 연동할 예정입니다.
+        App Router · JavaScript · Tailwind CSS. Supabase는 이후에 연동할
+        예정입니다.
       </p>
       <p className="mt-4 font-mono text-sm text-zinc-500">
-        src/app/page.tsx 를 수정해 시작하세요
+        src/app/page.js 를 수정해 시작하세요
       </p>
     </main>
   );

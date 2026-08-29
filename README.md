@@ -6,7 +6,7 @@ Next.js 풀스택 사이드 프로젝트 스타터입니다.
 ## Stack
 
 - **Next.js 16** (App Router, Turbopack)
-- **React 19** + **TypeScript**
+- **React 19** + **JavaScript**
 - **Tailwind CSS 4**
 - **ESLint** (`eslint-config-next`)
 - Supabase — 추후 연동 예정
