@@ -1,0 +1,127 @@
+.main {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
+
+@media (min-width: 640px) {
+  .main {
+    padding-inline: 1.5rem;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 26rem;
+  border-radius: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+@media (min-width: 640px) {
+  .card {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.brand {
+  font-family: var(--font-brand), sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--wine);
+}
+
+.title {
+  margin-top: 0.75rem;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.lead {
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--ink-soft) 85%, transparent);
+}
+
+.actions {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.google,
+.kakao {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 0.85rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.google:not(:disabled):hover,
+.kakao:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.google:disabled,
+.kakao:disabled {
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+.google {
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  background: #fff;
+  color: var(--ink);
+}
+
+.kakao {
+  border: none;
+  background: #fee500;
+  color: #191600;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.note {
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--ink-soft) 65%, transparent);
+  text-align: center;
+}
+
+.back {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--wine);
+  transition: color 0.2s ease;
+}
+
+.back:hover {
+  color: var(--accent);
+}

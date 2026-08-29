@@ -1,0 +1,117 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  background: color-mix(in srgb, var(--foam) 80%, transparent);
+  backdrop-filter: blur(12px);
+}
+
+.inner {
+  margin-inline: auto;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  max-width: 72rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .inner {
+    padding-inline: 1.5rem;
+  }
+}
+
+.brand {
+  font-family: var(--font-brand), sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.brand:hover {
+  color: var(--wine);
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.link {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--ink-soft) 80%, transparent);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--ink);
+}
+
+.linkActive {
+  composes: link;
+  color: var(--ink);
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  height: 0.125rem;
+  width: 100%;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.cta {
+  border-radius: 0.75rem;
+  background: var(--ink);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foam);
+  transition: background 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--wine);
+}
+
+.login {
+  border-radius: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--wine) 35%, transparent);
+  background: rgba(255, 255, 255, 0.55);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--wine);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.login:hover {
+  border-color: var(--wine);
+  background: #fff;
+  color: var(--accent);
+}
