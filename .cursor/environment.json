@@ -1,0 +1,10 @@
+{
+  "name": "hobbyside-project",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "Next.js Dev",
+      "command": "npm run dev -- --hostname 0.0.0.0 --port 3000"
+    }
+  ]
+}
